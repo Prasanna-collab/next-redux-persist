@@ -15,6 +15,7 @@ const authPersistConfig = {
 
 const rootReducer = combineReducers({
     auth: persistReducer(authPersistConfig, authReducer)
+    // auth:authReducer
 })
 
 export const store = configureStore({

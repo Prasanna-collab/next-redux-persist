@@ -7,7 +7,7 @@ const About = () => {
     const authState = useAppSelector((state)=> state.auth.authState);
     console.log(authState);
   return <main className="">
-        About <h1>{authState}</h1>
+        About <h1>{authState? "true":"false"}</h1>
     </main>
  
 }
